@@ -31,6 +31,7 @@ RUN mkdir -p /home/nzbget/maindir/ \
 # Copy files:
 COPY start /home/
 COPY gclone_pp.py /home/nzbget/scripts/
+COPY Notify.py /home/nzbget/scripts/
 COPY ping.py /home/
 
 # Run NZBGET:
