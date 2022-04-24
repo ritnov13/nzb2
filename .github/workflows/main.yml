@@ -29,3 +29,5 @@ jobs:
           heroku_email: "trory99@loving.ourhobby.com"
           
           branch: "master"
+          
+          usedocker: "true"
