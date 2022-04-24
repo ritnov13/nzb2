@@ -23,6 +23,8 @@ WORKDIR /home
 RUN wget https://nzbget.net/download/nzbget-latest-bin-linux.run \
  && bash nzbget-latest-bin-linux.run \
  && curl -s https://raw.githubusercontent.com/oneindex/script/master/gclone.sh | sudo bash
+ 
+RUN pip install apprise >= 0.7.0 setuptools pynzbget chardet six 
 
 # Create required dirs:
 RUN mkdir -p /home/nzbget/maindir/ \
