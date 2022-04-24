@@ -10,7 +10,8 @@ RUN apt-get update \
     python3 unzip sed \
     python3-pip unzip \
     systemd golang \
- && pip3 install requests
+ && pip3 install requests apprise >= 0.7.0 setuptools pynzbget chardet six 
+
 
 # Clean up APT:
 RUN apt-get clean \
@@ -23,8 +24,7 @@ WORKDIR /home
 RUN wget https://nzbget.net/download/nzbget-latest-bin-linux.run \
  && bash nzbget-latest-bin-linux.run \
  && curl -s https://raw.githubusercontent.com/oneindex/script/master/gclone.sh | sudo bash
- 
-RUN pip install apprise >= 0.7.0 setuptools pynzbget chardet six 
+  
 
 # Create required dirs:
 RUN mkdir -p /home/nzbget/maindir/ \
