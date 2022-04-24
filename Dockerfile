@@ -12,7 +12,7 @@ RUN apt-get update \
     systemd golang \
  && pip3 install requests setuptools pynzbget chardet six 
  
-RUN pip3 install apprise == 0.9.7
+RUN pip3 install apprise==0.9.7
 
 
 # Clean up APT:
