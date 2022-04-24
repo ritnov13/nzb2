@@ -10,7 +10,7 @@ RUN apt-get update \
     python3 unzip sed \
     python3-pip unzip \
     systemd golang \
- && pip3 install requests apprise setuptools pynzbget chardet six 
+ && pip3 install --upgrade requests apprise setuptools pynzbget chardet six 
 
 
 # Clean up APT:
