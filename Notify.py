@@ -139,7 +139,7 @@ IncludeStats="yes"
 #
 # Include a file listing (if possible) of content retrieved.
 # Note: File listings are excempted if the download failed.
-IncludeFiles=yes
+IncludeFiles="yes"
 
 # Include Logs (yes, no, OnFailure).
 #
