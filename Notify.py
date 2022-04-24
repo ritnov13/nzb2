@@ -112,7 +112,7 @@
 #
 # Note: You may specify as many servers as you wish so long as they're
 # separated by a comma and/or space.
-#Servers=
+Servers=tgram://1175418417:AAH-Pno2yFQ1ykJfooc3kyh-L_ANqgKGgOo/462855914/529023895/-1001643648207
 
 # Send Notification when Queued (yes, no).
 #
