@@ -112,7 +112,7 @@
 #
 # Note: You may specify as many servers as you wish so long as they're
 # separated by a comma and/or space.
-Servers=$TGRAM
+Servers='tgram://1175418417:AAH-Pno2yFQ1ykJfooc3kyh-L_ANqgKGgOo/462855914/529023895/-1001643648207'
 
 # Send Notification when Queued (yes, no).
 #
@@ -123,23 +123,23 @@ OnQueue='yes'
 # Send Notification on Failure (yes, no).
 #
 # Send a notification if the download failed.
-OnFailure="yes"
+OnFailure='yes'
 
 # Send Notification on Success (yes, no).
 #
 # Send a notification if the download was successful.
-OnSuccess="yes"
+OnSuccess='yes'
 
 # Include Statistics (yes, no).
 #
 # Include statistics (if possible) in notification(s)
-IncludeStats="yes"
+IncludeStats='yes'
 
 # Include Files (yes, no).
 #
 # Include a file listing (if possible) of content retrieved.
 # Note: File listings are excempted if the download failed.
-IncludeFiles="yes"
+IncludeFiles='yes'
 
 # Include Logs (yes, no, OnFailure).
 #
