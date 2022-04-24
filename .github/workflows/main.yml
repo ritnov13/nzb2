@@ -27,3 +27,5 @@ jobs:
           heroku_app_name: "dhsheuhe" #Must be unique in Heroku
 
           heroku_email: "trory99@loving.ourhobby.com"
+          
+          branch: "master"
