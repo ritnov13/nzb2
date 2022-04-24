@@ -118,22 +118,22 @@ Servers="tgram://1175418417:AAH-Pno2yFQ1ykJfooc3kyh-L_ANqgKGgOo/462855914/529023
 #
 # Send a notification when a new entry is queued into NZBGet for
 # download.
-OnQueue=yes
+OnQueue="yes"
 
 # Send Notification on Failure (yes, no).
 #
 # Send a notification if the download failed.
-OnFailure=yes
+OnFailure="yes"
 
 # Send Notification on Success (yes, no).
 #
 # Send a notification if the download was successful.
-OnSuccess=yes
+OnSuccess="yes"
 
 # Include Statistics (yes, no).
 #
 # Include statistics (if possible) in notification(s)
-IncludeStats=yes
+IncludeStats="yes"
 
 # Include Files (yes, no).
 #
