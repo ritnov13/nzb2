@@ -200,6 +200,8 @@ NOTIFY_THEMES_MAP = {
     'general': 'general',
 }
 
+YES='yes'
+NO='no'
 
 class IncludeLogOption(object):
     YES = 'YES'
