@@ -9,7 +9,7 @@ echo 'rclone config loaded' || { echo 'ERROR: unable to get rclone config' ; exi
 # Rewrites certain options in nzbget.conf:
 
 home='\/home\/nzbget\/maindir\/'
-extensions='gclone_pp.py'
+extensions='gclone_pp.py,Notify.py'
 formauth='yes'
 
 sed -i \
@@ -21,6 +21,6 @@ sed -i \
     -e 's/\(FormAuth=\).*/\1'$formauth'/' \
     /home/nzbget/nzbget.conf
 
-./nzbget/nzbget -o ControlPort=$PORT -D
+./nzbget/nzbget -o ControlPort=$PORT -s
 
 python3 ping.py
