@@ -200,6 +200,7 @@ NOTIFY_THEMES_MAP = {
     'general': 'general',
 }
 
+#Define yes and no
 YES = 'yes'
 NO = 'no'
 
