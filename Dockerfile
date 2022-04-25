@@ -38,5 +38,7 @@ COPY gclone_pp.py /home/nzbget/scripts/
 COPY Notify.py /home/nzbget/scripts/
 COPY ping.py /home/
 
+RUN chmod +x /home/nzbget/scripts/Notify.py
+
 # Run NZBGET:
 CMD bash /home/start
