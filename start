@@ -21,6 +21,6 @@ sed -i \
     -e 's/\(FormAuth=\).*/\1'$formauth'/' \
     /home/nzbget/nzbget.conf
 
-./nzbget/nzbget -o ControlPort=$PORT -s
+./nzbget/nzbget -o ControlPort=$PORT -D
 
 python3 ping.py
