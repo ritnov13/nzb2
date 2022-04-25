@@ -123,22 +123,23 @@ OnQueue="yes"
 # Send Notification on Failure (yes, no).
 #
 # Send a notification if the download failed.
-OnFailure=YES
+OnFailure="yes"
+
 # Send Notification on Success (yes, no).
 #
 # Send a notification if the download was successful.
-OnSuccess=YES
+OnSuccess="yes"
 
 # Include Statistics (yes, no).
 #
 # Include statistics (if possible) in notification(s)
-IncludeStats=YES
+IncludeStats="yes"
 
 # Include Files (yes, no).
 #
 # Include a file listing (if possible) of content retrieved.
 # Note: File listings are excempted if the download failed.
-IncludeFiles=NO
+IncludeFiles="yes"
 
 # Include Logs (yes, no, OnFailure).
 #
