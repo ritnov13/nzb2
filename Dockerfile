@@ -6,7 +6,7 @@ CMD ["/sbin/my_init"]
 # Install dependencies:
 RUN apt-get update \
  && apt-get install -y \
-    bash curl sudo wget unrar \
+    bash curl sudo wget \
     python3 unzip sed \
     python3-pip unzip \
     systemd golang \
@@ -14,6 +14,7 @@ RUN apt-get update \
  
 RUN pip3 install apprise==0.9.7
 
+RUN apt-get install unrar
 
 # Clean up APT:
 RUN apt-get clean \
