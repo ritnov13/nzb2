@@ -6,7 +6,7 @@ CMD ["/sbin/my_init"]
 # Install dependencies:
 RUN apt-get update \
  && apt-get install -y \
-    bash curl sudo wget \
+    bash curl sudo wget unrar \
     python3 unzip sed \
     python3-pip unzip \
     systemd golang \
