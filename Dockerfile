@@ -47,6 +47,6 @@ COPY lib/ /home/nzbget/scripts/videosort/lib/
 RUN ls -la /home/nzbget/scripts/videosort/lib/*
 
 RUN chmod +x /home/nzbget/scripts/Notify.py
-
+RUN chmod +x /home/nzbget/scripts/videosort/VideoSort.py
 # Run NZBGET:
 CMD bash /home/start
