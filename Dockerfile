@@ -46,7 +46,10 @@ COPY gclone_pp.py /home/nzbget/scripts/
 COPY Notify.py /home/nzbget/scripts/
 COPY ping.py /home/
 COPY VideoSort.py /home/nzbget/scripts/videosort/
-COPY 
+COPY pkg_resources.py six.py /home/nzbget/scripts/videosort/lib/
+
+
+
 RUN chmod +x /home/nzbget/scripts/Notify.py
 
 # Run NZBGET:
