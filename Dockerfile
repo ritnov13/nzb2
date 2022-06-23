@@ -2,7 +2,8 @@ FROM phusion/baseimage:bionic-1.0.0
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
-
+RUN apt-get install software-properties-common
+RUN apt-add-repository universe
 # Install dependencies:
 RUN apt-get update \
  && apt-get install -y \
