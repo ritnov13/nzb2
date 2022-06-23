@@ -44,6 +44,7 @@ COPY VideoSort.py /home/nzbget/scripts/videosort/
 COPY pkg_resources.py six.py /home/nzbget/scripts/videosort/lib/
 COPY lib/ /home/nzbget/scripts/videosort/lib/
 
+RUN ls -la /home/nzbget/scripts/videosort/lib/*
 
 RUN chmod +x /home/nzbget/scripts/Notify.py
 
