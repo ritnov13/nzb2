@@ -33,12 +33,7 @@ RUN wget https://nzbget.net/download/nzbget-latest-bin-linux.run \
 RUN mkdir -p /home/nzbget/maindir/ \
  && mkdir -p /home/.config/rclone/ \
  && mkdir -p /home/nzbget/scripts/videosort/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/dateutil/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/guessit/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/rebulk/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/bablefish/ \
- && mkdir -p /home/nzbget/scripts/videosort/lib/dateutil/ 
+ && mkdir -p /home/nzbget/scripts/videosort/lib/ 
 # Copy files:
 
 COPY start /home/
@@ -47,7 +42,7 @@ COPY Notify.py /home/nzbget/scripts/
 COPY ping.py /home/
 COPY VideoSort.py /home/nzbget/scripts/videosort/
 COPY pkg_resources.py six.py /home/nzbget/scripts/videosort/lib/
-
+COPY lib/ /home/nzbget/scripts/videosort/lib/
 
 
 RUN chmod +x /home/nzbget/scripts/Notify.py
