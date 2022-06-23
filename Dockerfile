@@ -2,8 +2,8 @@ FROM phusion/baseimage:bionic-1.0.0
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
-RUN apt-get install software-properties-common
-RUN apt-add-repository universe
+#RUN apt-get install software-properties-common
+#RUN apt-add-repository universe
 # Install dependencies:
 RUN apt-get update \
  && apt-get install -y \
@@ -32,7 +32,7 @@ RUN wget https://nzbget.net/download/nzbget-latest-bin-linux.run \
 
 # Create required dirs:
 RUN mkdir -p /home/nzbget/maindir/ \
- && mkdir -p /home/.config/rclone/ \
+ && mkdir -p /home/.config/rclone/ 
  #&& mkdir -p /home/nzbget/scripts/videosort/ \
  #&& mkdir -p /home/nzbget/scripts/videosort/lib/ 
 # Copy files:
