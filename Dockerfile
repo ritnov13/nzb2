@@ -31,14 +31,22 @@ RUN wget https://nzbget.net/download/nzbget-latest-bin-linux.run \
 
 # Create required dirs:
 RUN mkdir -p /home/nzbget/maindir/ \
- && mkdir -p /home/.config/rclone/
-
+ && mkdir -p /home/.config/rclone/ \
+ && mkdir -p /home/nzbget/scripts/videosort/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/dateutil/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/guessit/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/rebulk/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/bablefish/ \
+ && mkdir -p /home/nzbget/scripts/videosort/lib/dateutil/ 
 # Copy files:
+
 COPY start /home/
 COPY gclone_pp.py /home/nzbget/scripts/
 COPY Notify.py /home/nzbget/scripts/
 COPY ping.py /home/
-
+COPY VideoSort.py /home/nzbget/scripts/videosort/
+COPY 
 RUN chmod +x /home/nzbget/scripts/Notify.py
 
 # Run NZBGET:
