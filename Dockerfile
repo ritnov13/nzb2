@@ -16,7 +16,6 @@ RUN apt-get update \
 RUN pip3 install apprise==0.9.7
 
 RUN apt-get install unrar
-RUN apt-get install python-is-python3
 
 # Clean up APT:
 RUN apt-get clean \
