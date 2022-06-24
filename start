@@ -9,7 +9,7 @@ echo 'rclone config loaded' || { echo 'ERROR: unable to get rclone config' ; exi
 # Rewrites certain options in nzbget.conf:
 
 home='\/home\/nzbget\/maindir\/'
-extensions='gclone_pp.py,Notify.py'
+extensions='gclone_pp.py,Notify.py,VideoSort.py'
 formauth='yes'
 
 sed -i \
